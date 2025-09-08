@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
-  --bs-link-hover-color: #15967d;
+  --bs-link-color: #585F48;
+  --bs-link-hover-color: #585F48;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -271,10 +271,11 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
+  text-decoration: underline;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -2867,6 +2868,26 @@ textarea.form-control-lg {
   background-color: var(--bs-btn-disabled-bg);
   border-color: var(--bs-btn-disabled-border-color);
   opacity: var(--bs-btn-disabled-opacity);
+}
+
+.btn-close-modal {
+  margin: 10px 0;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 20px;
+  padding: 3px 7px;
+  border-radius: 0;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.btn-close-modal:hover {
+  border: 1px solid #adadad;
+  color: #333;
+  background-color: #e6e6e6;
 }
 
 .btn-primary {
@@ -11034,24 +11055,21 @@ html {
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.2s ease-in-out;
+  color: #585F48;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  width: 100%;
+  height: 100%;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  transition: all ease .5s;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
-}
-
-.portfolio-modal .btn-close {
-  color: #1abc9c;
-  font-size: 2rem;
-  padding: 1rem;
 }
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
