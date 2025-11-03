@@ -709,6 +709,42 @@ progress {
   border-radius: 10px;
 }
 
+@media (max-width: 575px) {
+  .masthead .container {
+    padding-top: calc(4rem + 74px) !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .masthead-subheading.gap-3 {
+    gap: 1.5rem !important;
+  }
+
+  #about {
+    padding-top: 4rem !important;
+  }
+
+  .page-section {
+    padding: 2rem 0 !important;
+  }
+
+  .container-sm, .container {
+    max-width: 90%;
+  }
+
+  .devicon, .masthead-subheading {
+    flex-direction: column;
+  }
+
+  .portfolio .row {
+    flex-direction: column;
+    
+    .mockup-container {
+      width: 100% !important;
+    }
+  }
+
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
