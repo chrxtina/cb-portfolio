@@ -650,6 +650,20 @@ progress {
   height: auto;
 }
 
+.video-container {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.modal-video {
+  width: 80%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: inset(3px);
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

@@ -141,6 +141,17 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-6 mb-5 d-flex justify-content-center">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center">
+                                    WatchTower
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/mockup_watchtower.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-6 mb-5 d-flex justify-content-center">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center">
@@ -150,17 +161,6 @@
                             <img class="img-fluid" src="assets/img/portfolio/mockup_gb.png" alt="..." />
                         </div>
                     </div>
-
-                    <!-- <div class="col-6 mb-5 d-flex justify-content-center">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center">
-                                    Gravida Beauty
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/mockup_gb.png" alt="..." />
-                        </div>
-                    </div> -->
                   
                 </div>
             </div>
@@ -305,27 +305,46 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
                     <div class="modal-body text-center pb-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">WatchTower</h2>
+                                    <hr>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <!-- <a target="_blank" href="https://chrxtina.github.io/watchtower/">
+                                        <img class="img-fluid rounded mb-5" src="assets/img/portfolio/mockup_watchtower.png" alt="..." />
+                                    </a> -->
+                                    <div class="video-container">
+                                        <img class="img-fluid" src="assets/img/portfolio/macbook_frame.png" alt="..." />
+                                        <video 
+                                            autoplay 
+                                            loop 
+                                            muted 
+                                            playsinline 
+                                            poster="first-frame.jpg"
+                                            class="modal-video"
+                                        >
+                                            <source src="assets/img/portfolio/WatchTower.mp4" type="video/mp4">
+                                            
+                                            <p>Your browser does not support the video tag.</p>
+                                        </video>
+                                    </div>
+
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">
+                                        <a target="_blank" href="https://chrxtina.github.io/watchtower/">WatchTower</a> is a real-time browser-based surveillance project that detects people entering a user-defined intrusion zone. It's designed with edge-first AI inference, meaning all detection happens locally, ensuring low latency and privacy.
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <span class="stack">JavaScript</span> | <span class="stack">Tensorflow.js</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
