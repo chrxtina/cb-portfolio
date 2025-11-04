@@ -658,7 +658,7 @@ progress {
 .modal-video {
   width: 80%;
   position: absolute;
-  top: 30px;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   clip-path: inset(3px);
@@ -755,6 +755,7 @@ progress {
     max-width: 720px;
   }
 }
+
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
